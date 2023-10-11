@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+<div class="container p-2">
+    <h1>User After Login: Home Page</h1>
+    <strong>
+        <p sec:authentication="principal.username">User</p>
+    </strong>
+</div>
+</section>
+</body>
+</html>
